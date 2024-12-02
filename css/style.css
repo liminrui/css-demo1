@@ -1,0 +1,50 @@
+
+a {
+    color: red;
+}
+
+
+/*尚未访问的选择器*/
+a:link {
+    color: lightblue;
+}
+
+h1[class] {
+    color: silver;
+}
+
+/*
+<h1 lang="en">
+<h1 lang="en-a">
+*/
+h1[lang|="en"] {
+    color: red;
+}
+
+/* 等价 p.warning 语义为p的classList中包含warning*/
+p[class~="warning"] {
+    font-weight: bold;
+}
+/*只要class中包含green即可，无需完全匹配*/
+p[class*="green"] {
+    color: green;
+}
+p em { /*后代选择器*/
+    color: blueviolet;
+}
+
+p > em { /*直接子代*/
+    color: brown;
+}
+/*img的源的结尾是png, i不区分大小写*/
+img[src$=".png" i] {
+    border: 1px solid black;
+}
+
+li + li { /*对于适配的第一个li则对第二个起作用，以此类推*/
+    font-weight: bold;
+}
+
+p ~ div > ol { /*p元素同属一个父元素的节点*/
+    color: cadetblue;
+}
