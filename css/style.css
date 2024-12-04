@@ -1,12 +1,24 @@
 
+:root {
+    border: 10px dotted gray;
+}
+
+body {
+    border: 10px solid black;
+}
+
 a {
     color: red;
 }
 
 
 /*尚未访问的选择器*/
-a:link {
+a:link:hover {
     color: lightblue;
+}
+
+a:visited:hover {
+    color: aqua;
 }
 
 h1[class] {
@@ -45,6 +57,19 @@ li + li { /*对于适配的第一个li则对第二个起作用，以此类推*/
     font-weight: bold;
 }
 
+ol li:only-child { /*当li是ol唯一的子元素时匹配*/
+    color: bisque;
+}
+
+
 p ~ div > ol { /*p元素同属一个父元素的节点*/
     color: cadetblue;
+}
+div > p:only-of-type {
+    /* color: black; */
+    font-size: x-large;
+}
+
+li:first-child {
+    text-transform: uppercase;
 }
