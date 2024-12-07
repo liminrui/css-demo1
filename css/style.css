@@ -21,12 +21,17 @@ a:visited:hover {
     color: aqua;
 }
 
+input:focus {
+    background-color: aliceblue;
+    /* border: 5px solid red; */
+}
+
 h1[class] {
     color: silver;
 }
 
 /*
-<h1 lang="en">
+<h1 lang="en">开头
 <h1 lang="en-a">
 */
 h1[lang|="en"] {
@@ -72,4 +77,25 @@ div > p:only-of-type {
 
 li:first-child {
     text-transform: uppercase;
+}
+
+input[type='checkbox']:checked + label {
+    border: 3px solid red;
+    background: red;
+}
+
+input:indeterminate {
+    background-color: silver;
+}
+
+input:required:checked {
+    background-color: red;
+}
+
+input[type="number"]:out-of-range {
+    border: 2px solid blue;
+}
+
+textarea:read-only {
+    opacity: 0.7;
 }
