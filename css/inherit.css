@@ -1,0 +1,10 @@
+div {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: red;
+}
+
+div > p {
+    all: inherit;
+}
