@@ -1,0 +1,13 @@
+:root {
+    font-size: 13px;
+}
+
+div {
+    font-size: 20px;
+    padding: 1em; /*相对于该元素字体大小的倍数*/
+}
+
+/*相对于根节点字体大小的倍数*/
+p {
+    font-size: 2rem;
+}
