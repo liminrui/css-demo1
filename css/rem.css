@@ -9,5 +9,13 @@ div {
 
 /*相对于根节点字体大小的倍数*/
 p {
+    border: 1px solid black;
     font-size: 2rem;
+    width: 50vw;
+    height: 50vh;
+
+}
+
+p::before {
+    content: "[" attr(id) "]";
 }
