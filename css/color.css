@@ -3,9 +3,14 @@ p.one {
 }
 
 p.two {
-    color: #00000022;
+    color: var(--alison);
+    border-color: currentColor; /*当前color的值*/
 }
 
 p.three {
     color: #00000000;
+}
+
+html {
+    --alison: #639;
 }
