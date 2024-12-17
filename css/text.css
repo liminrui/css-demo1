@@ -1,0 +1,5 @@
+p {
+    padding: 4rem;
+    text-indent: -4rem;
+    text-align: justify; /*文本两边对齐*/
+}

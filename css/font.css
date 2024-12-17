@@ -1,0 +1,4 @@
+@font-face {
+    font-family: 'test';
+    src: url(), url(); /*自定义的字体文件,otf之类的, 如果第一个src下载不到对应文件则下载第二个*/
+}
