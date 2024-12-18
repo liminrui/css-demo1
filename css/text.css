@@ -1,5 +1,8 @@
 p {
-    padding: 4rem;
-    text-indent: -4rem;
+    width: 10em;
+    /* padding: 4rem;
+    text-indent: -4rem; */
     text-align: justify; /*文本两边对齐*/
+
+    text-align-last: end; /*文本最后一行的对齐方式*/
 }
